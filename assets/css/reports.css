@@ -1,0 +1,166 @@
+/* ===== Page Container ===== */
+.reports-wrap {
+    max-width: 950px;
+    margin: 50px auto;
+    padding: 40px 20px;
+    font-family: 'Inter', sans-serif;
+    color: #111827;
+    background: #f9fafb;
+}
+
+/* ===== Page Header ===== */
+.reports-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.reports-header h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #111827;
+}
+
+.header-icon {
+    width: 24px;
+    height: 24px;
+    stroke: #2563eb;
+}
+
+/* ===== Report Block ===== */
+.report-block {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    padding: 25px 28px;
+    margin-bottom: 30px;
+}
+
+.report-block h2 {
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+    stroke: #2563eb;
+}
+
+/* ===== Filter Form ===== */
+.filter-form {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.filter-form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-form label {
+    font-size: 13px;
+    color: #6b7280;
+    margin-bottom: 4px;
+}
+
+.filter-form input[type="date"] {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+}
+
+.filter-form button {
+    background: #2563eb;
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+/* ===== Tables ===== */
+.table-wrap {
+    overflow-x: auto;
+}
+
+.report-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.report-table th,
+.report-table td {
+    padding: 12px 14px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.report-table thead th {
+    font-weight: 500;
+    color: #6b7280;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.report-table tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+    transition: background 0.2s;
+}
+
+.report-table tbody tr:nth-child(even) {
+    background-color: #f3f4f6;
+}
+
+.report-table tbody tr:hover {
+    background-color: #e0f2fe;
+}
+
+.total-row td {
+    font-weight: 600;
+    background: #f9fafb;
+}
+
+/* ===== Badges ===== */
+.badge {
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.badge-warning {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.badge-danger {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .filter-form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+.empty-state {
+    padding: 10px;
+    background: #e8e7e7;
+    color: #000000;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 1px;
+}

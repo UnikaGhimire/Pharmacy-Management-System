@@ -1,0 +1,107 @@
+/* ===== Page Container ===== */
+.content-wrapper {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 15px;
+    font-family: 'Inter', sans-serif;
+    color: #111;
+}
+
+/* ===== Page Header ===== */
+.page-header {
+    margin-bottom: 25px;
+}
+
+.page-header h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* ===== Filter Card ===== */
+.filter-card {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-item {
+    flex: 1 1 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-item label {
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.filter-item input {
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.filter-item input:focus {
+    outline: none;
+    border-color: #111827;
+    box-shadow: 0 0 0 2px rgba(17,24,39,0.1);
+}
+
+/* ===== Table Card ===== */
+.table-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    overflow-x: auto;
+}
+
+/* ===== Data Table ===== */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.data-table th,
+.data-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.data-table thead {
+    background-color: #111827;
+    color: #fff;
+}
+
+.data-table tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+    transition: background 0.2s;
+}
+
+.data-table tbody tr:nth-child(even) {
+    background-color: #f9fafb; /* striped rows */
+}
+
+.data-table tbody tr:hover {
+    background-color: #f3f4f6;
+}
+
+/* ===== Empty State ===== */
+.empty-state {
+    text-align: center;
+    padding: 20px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .filter-card {
+        flex-direction: column;
+    }
+}

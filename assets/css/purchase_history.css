@@ -1,0 +1,238 @@
+/* Page container */
+.purchase-page {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 15px;
+    font-family: 'Inter', sans-serif;
+    color: #111;
+}
+
+.page-title {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Filter card */
+.filter-card {
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.filter-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+}
+
+.filter-item {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.filter-item label {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.filter-item select,
+.filter-item input[type="date"] {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+    min-width: 130px;
+}
+
+.filter-button button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background: #111827;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.filter-button button:hover {
+    background: #000;
+}
+
+/* Table card */
+.table-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow-x: auto;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+    padding: 14px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 14px;
+}
+
+.data-table th {
+    background: #f3f4f6;
+    font-weight: 600;
+    color: #111;
+}
+
+.data-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Badges */
+.badge {
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.badge-paid { background: #dcfce7; color: #166534; }
+.badge-unpaid { background: #fef3c7; color: #92400e; }
+
+/* Action button */
+.btn-view {
+    padding: 6px 14px;
+    background: #111827;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.btn-view:hover {
+    background: #000;
+}
+
+/* Empty state */
+.empty-state {
+    text-align: center;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .filter-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-item,
+    .filter-button {
+        width: 100%;
+    }
+
+    .filter-button button {
+        width: 100%;
+    }
+}
+/* Filter card - fixed alignment */
+.filter-card {
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-end; /* ensures bottom alignment */
+    margin-bottom: 25px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.filter-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    align-items: flex-end; /* ensures all items align at bottom */
+}
+
+.filter-item {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.filter-item label {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.filter-item select,
+.filter-item input[type="date"] {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+    min-width: 130px;
+}
+
+/* Button aligned */
+.filter-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* makes button bottom-aligned with other fields */
+}
+
+.filter-button button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background: #111827;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.filter-button button:hover {
+    background: #000;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .filter-card {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-item,
+    .filter-button {
+        width: 100%;
+    }
+
+    .filter-button button {
+        width: 100%;
+    }
+}
+
